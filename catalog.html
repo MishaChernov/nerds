@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Nerd's</title>
+</head>
+<body>
+	 <header class="main-header">
+        <div class="container clearfix">
+           <div class="header-logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" width="140px" height="60px" alt="logo nerds">
+                </a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#">Студия</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-basket">
+                <a href="#" class="basket">Корзина</a>
+            </div>
+            <div class="header-welсome">
+                <span class="header-title">
+                	Добро пожаловать в магазин готовых макетов
+                </span>
+            </div>
+        </div>
+    </header>
+    <main class="container clearfix">
+    	<section class="content-left">
+    		<form action="#" method="get" oninput="ratemin.value=rangemin.value, ratemax.value=rangemax.value">
+	    		<div class="main-range">
+	    			<span class="title-select">Стоимость:</span>
+	    			<div class="price-range">
+	    				<input type="range" name="rangemin" min="0" max="19999" step="1" value="0">
+	    				<input type="range" name="rangemax" min="1" max="20000" step="1" value="15000">
+	    			</div>
+	    			<div class="output-price">
+		    			<div class="rate min">
+		    				<label>От</label>
+		    				<output name="ratemin">0</output>
+		    			</div>
+		    			<div class="rate max">
+		    				<label>До</label>
+		    				<output name="ratemax">15000</output>
+		    			</div>
+		    		</div>
+	    		</div>
+	    		<div class="main-radio">
+	    			<span class="title-select">Сетка:</span>
+	    			<input type="radio" name="radio-1" id="radio-1" checked>
+	    			<label for="radio-1">Адаптивная</label>
+	    			<input type="radio" name="radio-2" id="radio-2">
+	    			<label for="radio-2">Фиксированная</label>
+	    			<input type="radio" name="radio-3" id="radio-3">
+	    			<label for="radio-3">Резиновая</label>
+	    		</div>
+	    		<div class="main-checkbox">
+	    			<span class="title-select">Особенности:</span>
+	    			<input type="checkbox" name="check-1" id="check-1" checked>
+	    			<label for="check-1">Слайдер</label>
+	    			<input type="checkbox" name="check-2" id="check-2">
+	    			<label for="check-2">Блок преимуществ</label>
+	    			<input type="checkbox" name="check-3" id="check-3" checked>
+	    			<label for="check-3">Новости</label>
+	    			<input type="checkbox" name="check-4" id="check-4">
+	    			<label for="check-4">Галерея</label>
+	    			<input type="checkbox" name="check-5" id="check-5">
+	    			<label for="check-5">Корзина</label>
+	    		</div>
+	    		<div class="main-btn">
+	    			<input type="submit" class="btn" value="Показать">
+	    		</div>
+	    	</form>
+    	</section>
+    	<section class="content-right">
+    		<div class="main-sort">
+    			<ul>
+    				<li>Сортировать:</li>
+    				<li><a href="#">По цене</a></li>
+    				<li><a href="#">По типу</a></li>
+    				<li><a href="#">По функционалу</a></li>
+    			</ul>
+    			<div class="sort-rows"></div>
+    		</div>
+    		<figure class="gallery-product">
+    			<ul>
+    				<li class="product">
+    					<a href="#"><img src="img/product-1.jpg" width="240px" height="270px" alt="Aviator"></a>
+    				</li>
+    				<li class="product">
+    					<a href="#"><img src="img/product-2.jpg" width="240px" height="270px" alt="Sunset"></a>
+    				</li>
+    				<li class="product">
+    					<a href="#"><img src="img/product-3.jpg" width="240px" height="270px" alt="Forte"></a>
+    				</li>
+    				<li class="product">
+    					<a href="#"><img src="img/product-4.jpg" width="240px" height="270px" alt="Modern organic thai"></a>
+    				</li>
+    				<li class="product">
+    					<a href="#"><img src="img/product-5.jpg" width="240px" height="270px" alt="Avenue"></a>
+    				</li>
+    				<li class="product">
+    					<a href="#"><img src="img/product-6.jpg" width="240px" height="270px" alt="Dovetail"></a>
+    				</li>
+    			</ul>    			
+    		</figure>
+    		<div class="main-page">
+    			<ul>
+    				<li class="page"><a href="#">1</a></li>
+    				<li class="page"><a href="#">2</a></li>
+    				<li class="page"><a href="#">3</a></li>
+    				<li class="page next-page"><a href="#">Следующая</a></li>
+    			</ul>
+    		</div>
+    	</section>
+    	<section class="main-contacts">
+    		<div class="contacts">
+    			<b>Nerds design studio</b>
+    			<p>
+    				191186, Санкт-Путурбург,<br>
+    				ул. Б. Конюшенная, д. 19/8
+    			</p>
+    			<p>
+    				тел. +7(812)275-75-75
+    			</p>
+    			<a href="#" class="btn">Напишите нам</a>
+    		</div>
+    	</section>
+    </main>
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <section class="social">
+                <ul>
+                    <li>
+                        <a href="https://vk.com" class="social-icon social-vk">Вконтакте</a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" class="social-icon social-vk">Фейсбук</a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" class="social-icon social-vk">Инстаграм</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-info">
+                <span class="title-info">Давайте дружить, это выгодно!</span>
+                <p>Скидка 10% для друзей из социальных сетей</p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
