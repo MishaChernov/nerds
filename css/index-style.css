@@ -106,11 +106,7 @@ body {
 	margin-right: 20px;
 }
 
-.main-brends {
-
-}
-
-.main-brends a{
+.main-brends a {
 	display: block;
 	float: left;
 	width: 240px;
@@ -128,7 +124,6 @@ body {
 
 .contacts {
 	width: 250px;
-	height: 240px;
 	padding: 25px 20px;
 }
 
