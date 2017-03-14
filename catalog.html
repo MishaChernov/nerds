@@ -4,27 +4,27 @@
 	<meta charset="utf-8">
 	<title>Nerd's: catalog</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/catalog-style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
 		<div class="container">
 			<div class="header-top clearfix">
-				<div class="header-logo">
-					<a href="index.html">
-						<img src="img/logo.png" width="140px" height="60px" alt="logo nerds">
-					</a>
-				</div>
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="img/logo.png" width="160px" height="65px" alt="logo nerds">
+          </a>
+        </div>
 				<nav class="main-menu">
 					<ul>
 						<li>
-							<a href="#">Студия</a>
+							<a href="index.html">Студия</a>
 						</li>
 						<li>
 							<a href="#">Клиенты</a>
 						</li>
-						<li>
-							<a href="#" class="active">Магазин</a>
+						<li class="active">
+							<a href="#">Магазин</a>
 						</li>
 						<li>
 							<a href="#">Контакты</a>
@@ -35,7 +35,7 @@
 					<a href="#">Корзина</a>
 				</div>
 			</div>
-			<h1>Добро пожаловать в магазин готовых макетов</h1>
+			<h1>Магазин готовых шаблонов</h1>
 		</div>
 	</header>
 	<main>
@@ -78,27 +78,30 @@
 						<label for="check-5">Корзина</label>
 					</fieldset>
 					<div class="main-btn">
-						<button class="btn" type="submit">Показать</button>
+						<button class="btn-form" type="submit">Показать</button>
 					</div>
 				</form>
 			</section>
 			<section class="content-right">
-				<div class="main-sort">
-					<ul>
+				<div class="main-sort clearfix">
+          <div class="sort-txt">Сортировать:</div>
+					<ul class="sort-list">
 						<li>
-							<span>Сортировать:</span>
-						</li>
-						<li>
-							<a href="#">По цене</a>
+							<a href="#" class="active">По цене</a>
 						</li>
 						<li>
 							<a href="#">По типу</a>
 						</li>
 						<li>
-							<a href="#">По функционалу</a>
+							<a href="#">По названию</a>
 						</li>
-						<li class="sort-rows"></li>
 					</ul>
+          <div class="sort-rows">
+            <ul>
+              <li class="active"></li>
+              <li></li>
+            </ul>
+          </div>
 				</div>
 				<div class="gallery-product clearfix">
 					<article class="product">
@@ -109,13 +112,14 @@
 						</ul>
 						<div class="product-img">
 							<a href="#">
-								<img src="img/product-1.jpg" width="240px" height="270px" alt="Aviator">
+								<img src="img/product-1.jpg" width="360px" height="576px" alt="Sedona">
 							</a>
 						</div>
 						<div class="product-hidden">
-							<h3>Aviator</h3>
-							<p>Одностраничный макет с авторским дизайном</p>
-							<a href="#" class="btn">8000 р.</a>
+							<h3>Sedona</h3>
+							<p>Информационный сайт<br>
+              для туристов</p>
+							<a href="#" class="btn">9 900 руб.</a>
 						</div>
 					</article>
 					<article class="product">
@@ -126,13 +130,14 @@
 						</ul>
 						<div class="product-img">
 							<a href="#">
-								<img src="img/product-2.jpg" width="240px" height="270px" alt="Sunset">
+								<img src="img/product-2.jpg" width="360px" height="576px" alt="Pink">
 							</a>
 						</div>
 						<div class="product-hidden">
-							<h3>Sunset</h3>
-							<p>Одностраничный макет с авторским дизайном</p>
-							<a href="#" class="btn">8000 р.</a>
+							<h3>Pink app</h3>
+							<p>Продуктовый лендинг<br>
+              приложения для iOS и Android</p>
+							<a href="#" class="btn">9 900 руб.</a>
 						</div>
 					</article>
 					<article class="product">
@@ -143,13 +148,14 @@
 						</ul>
 						<div class="product-img">
 							<a href="#">
-								<img src="img/product-3.jpg" width="240px" height="270px" alt="Forte">
+								<img src="img/product-3.jpg" width="360px" height="576px" alt="Barbershop">
 							</a>
 						</div>
 						<div class="product-hidden">
-							<h3>Forte</h3>
-							<p>Одностраничный макет с авторским дизайном</p>
-							<a href="#" class="btn">8000 р.</a>
+							<h3>Barbershop</h3>
+							<p>Сайт салоны красоты.<br>
+              Для мужчин, да.</p>
+							<a href="#" class="btn">9 900 руб.</a>
 						</div>
 					</article>
 					<article class="product">
@@ -160,13 +166,14 @@
 						</ul>
 						<div class="product-img">
 							<a href="#">
-								<img src="img/product-4.jpg" width="240px" height="270px" alt="Modern organic thai">
+								<img src="img/product-4.jpg" width="360px" height="576px" alt="Mishka">
 							</a>
 						</div>
 						<div class="product-hidden">
-							<h3>Modern organic thai</h3>
-							<p>Одностраничный макет с авторским дизайном</p>
-							<a href="#" class="btn">8000 р.</a>
+							<h3>Mishka</h3>
+							<p>Интернет-магазин<br>
+              вязаных игрушек</p>
+							<a href="#" class="btn">9 900 руб.</a>
 						</div>
 					</article>
 					<article class="product">
@@ -177,13 +184,14 @@
 						</ul>
 						<div class="product-img">
 							<a href="#">
-								<img src="img/product-5.jpg" width="240px" height="270px" alt="Avenue">
+								<img src="img/product-5.jpg" width="360px" height="576px" alt="A Plus">
 							</a>
 						</div>
 						<div class="product-hidden">
-							<h3>Avenue</h3>
-							<p>Одностраничный макет с авторским дизайном</p>
-							<a href="#" class="btn">8000 р.</a>
+							<h3>A Plus</h3>
+							<p>Лендинг курсов повышения<br>
+              квалификации</p>
+							<a href="#" class="btn">9 900 руб.</a>
 						</div>
 					</article>
 					<article class="product">
@@ -194,19 +202,20 @@
 						</ul>
 						<div class="product-img">
 							<a href="#">
-								<img src="img/product-6.jpg" width="240px" height="270px" alt="Dovetail">
+								<img src="img/product-6.jpg" width="360px" height="576px" alt="Kvast">
 							</a>
 						</div>
 						<div class="product-hidden">
-							<h3>Dovetail</h3>
-							<p>Одностраничный макет с авторским дизайном</p>
-							<a href="#" class="btn">8000 р.</a>
+							<h3>Кваст</h3>
+							<p>Промо-сайт производителя<br>
+              крафтового кваса</p>
+							<a href="#" class="btn">9 900 руб.</a>
 						</div>
 					</article>
 				</div>
 				<ul class="pagination">
-					<li class="active">
-						<a href="#">1</a>
+					<li>
+						<a href="#" class="active">1</a>
 					</li>
 					<li>
 						<a href="#">2</a>
@@ -214,50 +223,58 @@
 					<li>
 						<a href="#">3</a>
 					</li>
-					<li class="next">
-						<a href="#">Следующая</a>
+					<li>
+						<a href="#" class="next">Следующая</a>
 					</li>
 				</ul>
 			</section>
 		</div>
-		<div class="main-contacts">
-			<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455724648764"
-	        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-	       	</div>
-			<div class="contacts">
-				<h3>Nerds design studio</h3>
-				<p>
-					191186, Санкт-Путурбург,<br>
-					ул. Б. Конюшенная, д. 19/8
-				</p>
-				<p>
-					тел. +7(812)275-75-75
-				</p>
-				<a href="#" class="btn">Напишите нам</a>
-			</div>
-		</div>
-	</main>
-	<footer class="main-footer">
-		<div class="container">
-			<section class="social">
-				<ul>
-					<li>
-						<a href="https://vk.com" class="social-icon social-vk">Вконтакте</a>
-					</li>
-					<li>
-						<a href="https://facebook.com" class="social-icon social-vk">Фейсбук</a>
-					</li>
-					<li>
-						<a href="https://instagram.com" class="social-icon social-vk">Инстаграм</a>
-					</li>
-				</ul>
-			</section>
-			<section class="footer-info">
-				<b>Давайте дружить, это выгодно!</b>
-				<p>Скидка 10% для друзей из социальных сетей</p>
-			</section>
-		</div>
-	</footer>
+		<section class="main-contacts">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104365163!2d30.320894616160455!3d59.938794181876176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1489349432621" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="contacts">
+        <h3>Nerds design studio</h3>
+        <p>
+          191186, Санкт-Путурбург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <a href="#" class="phone"><p>
+            тел. +7(812)275-75-75
+        </p></a>
+        <input type="submit" class="btn" value="Напишите нам">
+      </div>
+    </section>
+    <section class="popup clearfix">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <div class="left">
+            <label for="name">Ваше имя:</label><br>
+            <input type="text" name="name" id="name" required placeholder="Представьтесь, пожалуйста" autofocus>
+          </div>
+          <div class="right">
+            <label for="email">Ваш e-mail:</label><br>
+            <input type="email" name="email" id="email" required placeholder="Для отправки ответа">
+          </div>
+          <div class="message">
+            <label for="message">Текст письма:</label><br>
+            <textarea name="message" id="message" required placeholder="В свободной форме" rows="5"></textarea>
+            <input type="submit" value="Отправить" class="btn">
+            <a href="#" class="btn-close"></a>
+          </div>
+        </fieldset>
+      </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <section class="social">
+        <a href="https://vk.com" class="social-icon social-vk"></a>
+        <a href="https://facebook.com" class="social-icon social-fb"></a>
+        <a href="https://instagram.com" class="social-icon social-inst"></a>
+      </section>
+      <section class="footer-info">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>
