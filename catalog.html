@@ -24,7 +24,7 @@
 							<a href="#">Клиенты</a>
 						</li>
 						<li class="active">
-							<a href="#">Магазин</a>
+							<span class="active-page">Магазин</span>
 						</li>
 						<li>
 							<a href="#">Контакты</a>
@@ -45,15 +45,19 @@
 					<fieldset class="main-range">
 						<legend>Стоимость:</legend>
 						<div class="price-range">
-							<input type="range" name="rangemin" min="0" max="19999" step="1" value="0">
-							<input type="range" name="rangemax" min="1" max="20000" step="1" value="15000">
-						</div>
-						<label>
-							От<output name="ratemin">0</output>
-						</label>
-						<label>
-							До<output name="ratemax">15000</output>
-						</label>
+              <div class="box-range">
+                <div class="price-length">
+                  <div class="min-value"></div>
+                  <div class="max-value"></div>
+                </div>
+              </div>
+            </div>
+					  <div class="min-max">
+  						<label for="min">От</label>
+              <input type="text" name="min-price" id="min" value="0">
+  						<label for="max">До</label>
+              <input type="text" name="max-price" id="max" value="15000">
+            </div>
 					</fieldset>
 					<fieldset class="main-radio">
 						<legend>Сетка:</legend>
@@ -74,7 +78,7 @@
 						<label for="check-3">Новости</label>
 						<input type="checkbox" name="gallery" id="check-4">
 						<label for="check-4">Галерея</label>
-						<input type="checkbox" name="basket" id="check-5">
+						<input type="checkbox" name="basket" id="check-5" disabled="">
 						<label for="check-5">Корзина</label>
 					</fieldset>
 					<div class="main-btn">
@@ -84,7 +88,7 @@
 			</section>
 			<section class="content-right">
 				<div class="main-sort clearfix">
-          <div class="sort-txt">Сортировать:</div>
+          <span class="sort-txt">Сортировать:</span>
 					<ul class="sort-list">
 						<li>
 							<a href="#" class="active">По цене</a>
@@ -95,13 +99,9 @@
 						<li>
 							<a href="#">По названию</a>
 						</li>
+            <li class="rows-left row-active"></li>
+            <li class="rows-right"></li>
 					</ul>
-          <div class="sort-rows">
-            <ul>
-              <li class="active"></li>
-              <li></li>
-            </ul>
-          </div>
 				</div>
 				<div class="gallery-product clearfix">
 					<article class="product">
@@ -215,7 +215,7 @@
 				</div>
 				<ul class="pagination">
 					<li>
-						<a href="#" class="active">1</a>
+						<span class="active">1</span>
 					</li>
 					<li>
 						<a href="#">2</a>
@@ -237,25 +237,25 @@
           191186, Санкт-Путурбург,<br>
           ул. Б. Конюшенная, д. 19/8
         </p>
-        <a href="#" class="phone"><p>
+        <a href="tel:+78122757575" class="phone"><p>
             тел. +7(812)275-75-75
         </p></a>
-        <input type="submit" class="btn" value="Напишите нам">
+        <button type="button" class="btn">Напишите нам</button>
       </div>
     </section>
     <section class="popup clearfix">
         <fieldset>
           <legend>Напишите нам</legend>
           <div class="left">
-            <label for="name">Ваше имя:</label><br>
+            <label for="name">Ваше имя:</label>
             <input type="text" name="name" id="name" required placeholder="Представьтесь, пожалуйста" autofocus>
           </div>
           <div class="right">
-            <label for="email">Ваш e-mail:</label><br>
+            <label for="email">Ваш e-mail:</label>
             <input type="email" name="email" id="email" required placeholder="Для отправки ответа">
           </div>
           <div class="message">
-            <label for="message">Текст письма:</label><br>
+            <label for="message">Текст письма:</label>
             <textarea name="message" id="message" required placeholder="В свободной форме" rows="5"></textarea>
             <input type="submit" value="Отправить" class="btn">
             <a href="#" class="btn-close"></a>
@@ -266,9 +266,9 @@
   <footer class="main-footer">
     <div class="container clearfix">
       <section class="social">
-        <a href="https://vk.com" class="social-icon social-vk"></a>
-        <a href="https://facebook.com" class="social-icon social-fb"></a>
-        <a href="https://instagram.com" class="social-icon social-inst"></a>
+        <a href="https://vk.com" class="social-icon social-vk">Вконтакте</a>
+        <a href="https://facebook.com" class="social-icon social-fb">Фейсбук</a>
+        <a href="https://instagram.com" class="social-icon social-inst">Инстаграм</a>
       </section>
       <section class="footer-info">
         <h2>Давайте дружить, это выгодно!</h2>
