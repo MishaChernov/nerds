@@ -16,7 +16,7 @@
         </div>
         <nav class="main-menu">
           <ul>
-            <li class="active">
+            <li>
               <span class="active-page">Студия</span>
             <li>
               <a href="#">Клиенты</a>
@@ -164,19 +164,38 @@
             191186, Санкт-Путурбург,<br>
             ул. Б. Конюшенная, д. 19/8
         </p>
-        <a href="tel:+78122757575" class="phone"><p>
+        <a href="tel:+78122757575" class="phone">
             тел. +7(812)275-75-75
-        </p></a>
+        </a>
         <button type="button" class="btn">Напишите нам</button>
       </div>
     </section>
+    <section class="popup clearfix">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <div class="left">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" required placeholder="Представьтесь, пожалуйста" autofocus>
+          </div>
+          <div class="right">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" required placeholder="Для отправки ответа" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+          </div>
+          <div class="message">
+            <label for="message">Текст письма:</label>
+            <textarea name="message" id="message" required placeholder="В свободной форме" rows="5"></textarea>
+            <input type="submit" value="Отправить" class="btn">
+            <a href="#" class="btn-close"></a>
+          </div>
+        </fieldset>
+      </section>
   </main>
   <footer class="main-footer">
     <div class="container clearfix">
       <section class="social">
-        <a href="https://vk.com" class="social-icon social-vk">Вконтакте</a>
-        <a href="https://facebook.com" class="social-icon social-fb">Фейсбук</a>
-        <a href="https://instagram.com" class="social-icon social-inst">Инстаграм</a>
+        <a href="https://vk.com" class="sprite social-icon social-vk">Вконтакте</a>
+        <a href="https://facebook.com" class="sprite social-icon social-fb">Фейсбук</a>
+        <a href="https://instagram.com" class="sprite social-icon social-inst">Инстаграм</a>
       </section>
       <section class="footer-info">
         <h2>Давайте дружить, это выгодно!</h2>
