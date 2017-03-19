@@ -12,12 +12,13 @@
     <div class="container">
       <div class="header-top clearfix">
         <div class="header-logo">
-          <img src="img/logo.png" width="160px" height="65px" alt="logo nerds">
+          <img src="img/logo.png" width="160" height="65" alt="logo nerds">
         </div>
         <nav class="main-menu">
           <ul>
             <li>
               <span class="active-page">Студия</span>
+            </li>
             <li>
               <a href="#">Клиенты</a>
             </li>
@@ -30,7 +31,7 @@
           </ul>
         </nav>
         <div class="header-basket">
-          <a href="#">Корзина</a>
+          <a href="#" class="sprite">Корзина</a>
         </div>
       </div>
       <section class="slider">
@@ -84,7 +85,7 @@
     <div class="container">
       <section class="main-services clearfix">
         <div class="service">
-          <img src="img/services-1.jpg" width="300px" height="146px" alt="Веб-сайты">
+          <img src="img/services-1.jpg" width="300" height="146" alt="Веб-сайты">
           <div class="info">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним
@@ -93,7 +94,7 @@
           </div>
         </div>
         <div class="service">
-          <img src="img/services-2.jpg" width="300px" height="146px" alt="Приложения">
+          <img src="img/services-2.jpg" width="300" height="146" alt="Приложения">
           <div class="info">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений
@@ -102,7 +103,7 @@
           </div>
         </div>
         <div class="service">
-          <img src="img/services-3.jpg" width="300px" height="146px" alt="Презентации">
+          <img src="img/services-3.jpg" width="300" height="146" alt="Презентации">
           <div class="info">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете,
@@ -123,7 +124,7 @@
           </ul>
         </div>
         <div class="column-right">
-          <img src="img/main-logo.jpg" width="360px" height="208px" alt="nerds">
+          <img src="img/main-logo.jpg" width="360" height="208" alt="nerds">
           <h3>С 2004 года любим точность во всем:</h3>
           <ul>
             <li>
@@ -143,16 +144,16 @@
       </section>
       <section class="main-brends clearfix">
         <a href="https://htmlacademy.ru">
-          <img src="img/brend-1.jpg" width="199px" height="68px" alt="HTML Academy">
+          <img src="img/brend-1.jpg" width="199" height="68" alt="HTML Academy">
         </a>
         <a href="http://barbershop.websciurus.com/">
-          <img src="img/brend-2.jpg" width="209px" height="90px" alt="Borodinski">
+          <img src="img/brend-2.jpg" width="209" height="90" alt="Borodinski">
         </a>
         <a href="https://pink.ua/">
-          <img src="img/brend-3.jpg" width="185px" height="52px" alt="Pink">
+          <img src="img/brend-3.jpg" width="185" height="52" alt="Pink">
         </a>
         <a href="https://fuckomako.github.io/">
-          <img src="img/brend-4.jpg" width="173px" height="84px" alt="Mishka">
+          <img src="img/brend-4.jpg" width="173" height="84" alt="Mishka">
         </a>
       </section>
     </div>
@@ -167,10 +168,11 @@
         <a href="tel:+78122757575" class="phone">
             тел. +7(812)275-75-75
         </a>
-        <button type="button" class="btn">Напишите нам</button>
+        <a href="#" class="btn">Напишите нам</a>
       </div>
     </section>
     <section class="popup clearfix">
+      <form action="#" method="post">
         <fieldset>
           <legend>Напишите нам</legend>
           <div class="left">
@@ -184,11 +186,12 @@
           <div class="message">
             <label for="message">Текст письма:</label>
             <textarea name="message" id="message" required placeholder="В свободной форме" rows="5"></textarea>
-            <input type="submit" value="Отправить" class="btn">
-            <a href="#" class="btn-close"></a>
           </div>
+          <input type="submit" value="Отправить" class="btn">
+          <a href="#" class="sprite btn-close">Закрыть</a>
         </fieldset>
-      </section>
+      </form>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="container clearfix">
@@ -203,5 +206,6 @@
       </section>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

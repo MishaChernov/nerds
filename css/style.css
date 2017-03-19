@@ -20,6 +20,13 @@ body {
 }
 
         /*common style*/
+@keyframes shift {
+  0% {transform: translateX(-50%) translateY(-2000px);}
+  50% {transform: translateX(-50%) translateY(30px);}
+  70% {transform: translateX(-50%) translateY(-10px);}
+  100% {transform: translateX(-50%) translateY(0);}
+}
+
 p {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -199,7 +206,7 @@ button[type="button"] {
   position: absolute;
   bottom: 95px;
   left: 50%;
-  z-index: 1000;
+  z-index: 20;
   width: 200px;
   height: 10px;
   margin-left: -100px;
@@ -530,6 +537,7 @@ button[type="button"] {
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-position: inherit;
+  background-size: cover;
 }
 
 .contacts {
@@ -559,6 +567,7 @@ button[type="button"] {
 .contacts .btn {
   display: block;
   width: 100%;
+  padding: 15px 0;
   margin-top: 35px;
 }
 
@@ -624,7 +633,6 @@ button[type="button"] {
   font-weight: 500;
   color: #000000;
 }
-
 
         /*catalog.html*/
 .header-logo img:hover {
@@ -1050,7 +1058,7 @@ button[type="button"] {
 .product:hover {
   box-shadow: 0 1px 5px #d1d1d1,
               -1px 1px 5px #d1d1d1,
-              1px 1px 5px #d1d1d1;;
+              1px 1px 5px #d1d1d1;
 }
 
 .product:hover ul {
@@ -1060,9 +1068,7 @@ button[type="button"] {
 .product-hidden {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding: 30px 60px 50px 60px;
   text-align: center;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -1084,7 +1090,7 @@ button[type="button"] {
 }
 
 .product-hidden p {
-  padding-bottom: 30px;
+  padding: 0 5px 30px 5px;
 }
 
 .pagination {
@@ -1144,14 +1150,20 @@ button[type="button"] {
 .popup {
   position: fixed;
   display: none;
-  top: 30%;
+  top: 10%;
   left: 50%;
   width: 760px;
   padding: 60px 100px 85px 100px;
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
-  z-index: 40;
+  z-index: 30;
   transform: translateX(-50%);
+}
+
+.popup-show {
+  display: block;
+  animation-name: shift;
+  animation-duration: 0.6s;
 }
 
 .popup fieldset {
@@ -1215,11 +1227,7 @@ button[type="button"] {
 }
 
 .popup fieldset .btn {
-  border: none;
   margin-top: 45px;
-}
-
-.popup fieldset .btn:hover {
   border: none;
 }
 
@@ -1231,17 +1239,18 @@ button[type="button"] {
   display: block;
   width: 21px;
   height: 21px;
+  font-size: 0;
   background-repeat: no-repeat;
   background-position: -3px -21px;
   opacity: 0.3;
 }
 
-.popup fieldset input:hover,
+.popup fieldset input:not(.btn):hover,
 .popup fieldset textarea:hover {
   border: 2px solid #b4b9bb;
 }
 
-.popup fieldset input:focus,
+.popup fieldset input:not(.btn):focus,
 .popup fieldset textarea:focus {
   border: 2px solid #000000;
 }
