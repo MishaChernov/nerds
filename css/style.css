@@ -35,7 +35,7 @@ p {
   color: #283136;
 }
 
-.sprite {
+.icon {
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
 }
@@ -155,7 +155,7 @@ button[type="button"] {
   content: "";
   display: inline-block;
   width: 15px;
-  height: 22px;
+  height: 15px;
   margin-right: 30px;
   background:  #eeeeee no-repeat 0 1;
 }
@@ -175,7 +175,7 @@ button[type="button"] {
 .slider {
   position: relative;
   width: 100%;
-  height: 412px;
+  height: 423px;
   margin: 0 auto;
 }
 
@@ -237,6 +237,7 @@ button[type="button"] {
   left: 0;
   width: 100%;
   height: 100%;
+  background-position: bottom right;
   overflow: hidden;
 }
 
@@ -268,14 +269,17 @@ button[type="button"] {
 
 .slide p {
   margin: 0;
-  padding: 30px 0;
+  padding: 26px 0;
+
 }
 
 .slide .btn {
   display: block;
   width: 240px;
   padding: 15px 0;
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -293,15 +297,15 @@ button[type="button"] {
 }
 
 .slide:nth-child(1) {
-  background: url("../img/slide-1.png") no-repeat 100% 10px;
+  background: url("../img/slide-1.png") no-repeat bottom right;
 }
 
 .slide:nth-child(2) {
-  background: url("../img/slide-2.png") no-repeat 100% 10px;
+  background: url("../img/slide-2.png") no-repeat bottom right;
 }
 
 .slide:nth-child(3) {
-  background: url("../img/slide-3.png") no-repeat 100% 0;
+  background: url("../img/slide-3.png") no-repeat bottom right;
 }
 
 .slide {
@@ -323,7 +327,7 @@ button[type="button"] {
         /*main*/
 .main-services {
   padding-top: 25px;
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 }
 
 .service {
@@ -338,7 +342,7 @@ button[type="button"] {
 }
 
 .service .info {
-  padding-top: 25px;
+  padding-top: 18px;
 }
 
 .service .info h3 {
@@ -353,8 +357,13 @@ button[type="button"] {
 
 .service .info p {
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-top: 16px;
+  margin-bottom: 45px;
+  padding-right: 17px;
+}
+
+.service .info .btn {
+  padding: 15px 39px;
 }
 
 .service:nth-of-type(2) .info .btn {
@@ -397,8 +406,8 @@ button[type="button"] {
 }
 
 .column-left h2 {
-  margin-top: 32px;
-  margin-bottom: 25px;
+  margin-top: 38px;
+  margin-bottom: 33px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 45px;
   line-height: 45px;
@@ -408,7 +417,7 @@ button[type="button"] {
 
 .column-left h3 {
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -424,7 +433,7 @@ button[type="button"] {
 
 .column-left li {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   margin-left: 37px;
   list-style: none;
 }
@@ -450,12 +459,13 @@ button[type="button"] {
 }
 
 .column-right h3 {
+  margin-top: 34px;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   text-transform: uppercase;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 .column-right ul {
@@ -467,7 +477,7 @@ button[type="button"] {
   display: inline-block;
   vertical-align: top;
   width: 100px;
-  margin-right: 20px;
+  margin-right: 15px;
   font-size: 0;
   list-style: none;
 }
@@ -486,7 +496,7 @@ button[type="button"] {
 
 .column-right li .text {
   display: block;
-  padding-top: 25px;
+  padding-top: 38px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -495,23 +505,23 @@ button[type="button"] {
 
         /*brends*/
 .main-brends {
-  padding-top: 43px;
-  padding-bottom: 45px;
+  padding-top: 46px;
+  padding-bottom: 31px;
   margin-bottom: 80px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
 
 .main-brends a {
-  display: block;
-  float: left;
+  display: inline-block;
   width: 260px;
-  margin-right: 40px;
+  margin-right: 36px;
+  vertical-align: middle;
   text-align: center;
+  font-size: 0;
 }
 
 .main-brends a:last-child {
-  float: right;
   margin-right: 0;
 }
 
@@ -532,11 +542,11 @@ button[type="button"] {
   position: relative;
   display: block;
   width: 100%;
-  min-height: 415px;
+  min-height: 416px;
   background-color: #eeeeee;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
-  background-position: inherit;
+  background-position: center;
   background-size: cover;
 }
 
@@ -544,7 +554,7 @@ button[type="button"] {
   position: absolute;
   top: 30%;
   left: 20%;
-  padding: 15px 15px;
+  padding: 30px 30px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -564,11 +574,21 @@ button[type="button"] {
   text-decoration: none;
 }
 
-.contacts .btn {
+.btn-contacts {
   display: block;
   width: 100%;
   padding: 15px 0;
   margin-top: 35px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #fb565a;
+  border-radius: 3px;
+  color: #ffffff;
 }
 
 .contacts .btn:hover ~ .popup {
@@ -635,11 +655,11 @@ button[type="button"] {
 }
 
         /*catalog.html*/
-.header-logo img:hover {
+.logo-link img:hover {
   opacity: 0.8;
 }
 
-.header-logo img:active {
+.logo-link img:active {
   opacity: 0.3;
 }
 
@@ -793,7 +813,7 @@ button[type="button"] {
 .main-checkbox label {
   position: relative;
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   margin-left: 35px;
 }
 
@@ -876,7 +896,7 @@ button[type="button"] {
 }
 
 .content-left .main-btn {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .main-btn .btn-form {
@@ -914,6 +934,7 @@ button[type="button"] {
 .main-sort {
   position: relative;
   width: 100%;
+  margin-top: 5px;
 }
 
 .main-sort .sort-txt {
@@ -975,8 +996,8 @@ button[type="button"] {
 
 .sort-list .rows-left {
   position: absolute;
-  right: 20px;
-  top: 2px;
+  right: 10px;
+  top: 4px;
   width: 0;
   height: 0;
   border: 5px solid transparent;
@@ -987,8 +1008,8 @@ button[type="button"] {
 
 .sort-list .rows-right {
   position: absolute;
-  top: -3px;
-  right: 10px;
+  top: -2px;
+  right: 0px;
   width: 0;
   height: 0;
   border: 5px solid transparent;
@@ -1009,7 +1030,7 @@ button[type="button"] {
 
         /*gallery-product*/
 .gallery-product {
-  margin-top: 55px;
+  margin-top: 48px;
 }
 
 .product {
@@ -1029,7 +1050,7 @@ button[type="button"] {
 .product ul {
   padding: 0;
   margin: 0;
-  padding: 15px 0 30px 0;
+  padding: 15px 0 25px 0;
   width: 100%;
   background-color: #e9e9e9;
   border-radius: 5px 5px 0 0;
@@ -1067,6 +1088,7 @@ button[type="button"] {
 
 .product-hidden {
   position: absolute;
+  display: none;
   bottom: 0;
   padding: 30px 60px 50px 60px;
   text-align: center;
@@ -1076,7 +1098,6 @@ button[type="button"] {
   font-weight: 400;
   color: #666666;
   background-color: #eeeeee;
-  display: none;
 }
 
 .product-hidden h3 {
@@ -1093,9 +1114,13 @@ button[type="button"] {
   padding: 0 5px 30px 5px;
 }
 
+.product-hidden .btn {
+  padding: 15px 60px;
+}
+
 .pagination {
   margin: 0;
-  margin-top: 60px;
+  margin-top: 55px;
   margin-bottom: 60px;
   padding: 0;
 }
@@ -1107,7 +1132,7 @@ button[type="button"] {
 
 .pagination li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
   vertical-align: middle;
   font-size: 0;
   list-style: none;
@@ -1116,7 +1141,7 @@ button[type="button"] {
 .pagination a,
 .pagination .active {
   display: block;
-  padding: 14px 20px;
+  padding: 12px 18px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1134,7 +1159,7 @@ button[type="button"] {
 }
 
 .pagination .next {
-  width: 260px;
+  width: 222px;
 }
 
 .pagination a:not(.active):hover {
@@ -1242,7 +1267,9 @@ button[type="button"] {
   font-size: 0;
   background-repeat: no-repeat;
   background-position: -3px -21px;
+  background-color: #ffffff;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .popup fieldset input:not(.btn):hover,
