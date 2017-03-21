@@ -36,7 +36,7 @@ p {
 }
 
 .icon {
-  background-image: url(../img/sprite.png);
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
 }
 
@@ -204,7 +204,7 @@ button[type="button"] {
 
 .slider-controls {
   position: absolute;
-  bottom: 95px;
+  bottom: 106px;
   left: 50%;
   z-index: 20;
   width: 200px;
@@ -269,7 +269,9 @@ button[type="button"] {
 
 .slide p {
   margin: 0;
-  padding: 26px 0;
+  padding: 0;
+  padding-top: 26px;
+  padding-bottom: 40px;
 
 }
 
@@ -297,7 +299,8 @@ button[type="button"] {
 }
 
 .slide:nth-child(1) {
-  background: url("../img/slide-1.png") no-repeat bottom right;
+  background: url("../img/slide-1.png") no-repeat 93% 10px;
+  background-position-right: 30px;
 }
 
 .slide:nth-child(2) {
@@ -544,7 +547,7 @@ button[type="button"] {
   width: 100%;
   min-height: 416px;
   background-color: #eeeeee;
-  background-image: url(../img/map.png);
+  background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -591,8 +594,14 @@ button[type="button"] {
   color: #ffffff;
 }
 
-.contacts .btn:hover ~ .popup {
-  display: block;
+.btn-contacts:hover {
+  background-color: #e74246;
+}
+
+.btn-contacts:active {
+  color: #e37376;
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 #c13135;
 }
 
         /*footer*/
@@ -620,22 +629,30 @@ button[type="button"] {
 }
 
 .social .social-vk {
+  width: 26;
+  height: 15;
   background-position: 26px -72px;
+  opacity: 1;
 }
 
 .social .social-fb {
+  width: 12;
+  height: 22;
   background-position: 26px -130px;
+  opacity: 1;
 }
 
 .social .social-inst {
+  width: 21;
+  height: 21;
   background-position: 27px -190px;
 }
 
-.social .social-icon:hover {
+.social a:hover {
   background-color: #e74246;
 }
 
-.social .social-icon:active {
+.social a:active {
   background-color: #d7373b;
 }
 
@@ -652,6 +669,10 @@ button[type="button"] {
   line-height: 36px;
   font-weight: 500;
   color: #000000;
+}
+
+.footer-info p {
+  margin: 6px 0;
 }
 
         /*catalog.html*/
@@ -882,7 +903,7 @@ button[type="button"] {
   width: 27px;
   height: 23px;
   border: none;
-  background-image: url(../img/sprite.png);
+  background-image: url("../img/sprite.png");
   background-position: 0 -48px;
   opacity: 0.4;
 }
