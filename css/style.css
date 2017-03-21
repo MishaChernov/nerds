@@ -86,7 +86,6 @@ button[type="button"] {
 
         /*index.html*/
 .main-header {
-  width: 100%;
   padding-top: 45px;
   margin-bottom: 55px;
   background-color: #eeeeee;
@@ -300,7 +299,6 @@ button[type="button"] {
 
 .slide:nth-child(1) {
   background: url("../img/slide-1.png") no-repeat 93% 10px;
-  background-position-right: 30px;
 }
 
 .slide:nth-child(2) {
@@ -555,21 +553,25 @@ button[type="button"] {
 
 .contacts {
   position: absolute;
-  top: 30%;
-  left: 20%;
-  padding: 30px 30px;
-  text-align: center;
+  top: 11%;
+  left: 9%;
+  padding: 52px;
   background-color: #ffffff;
 }
 
 .contacts h3 {
   margin: 0;
+  margin-bottom: 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
+}
+
+.contacts p {
+  margin-bottom: 10px;
 }
 
 .contacts .phone {
@@ -580,7 +582,7 @@ button[type="button"] {
 .btn-contacts {
   display: block;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 0px;
   margin-top: 35px;
   text-align: center;
   text-decoration: none;
@@ -660,6 +662,7 @@ button[type="button"] {
   float: right;
   width: 760px;
   margin-left: 40px;
+  padding-top: 15px;
 }
 
 .footer-info h2 {
